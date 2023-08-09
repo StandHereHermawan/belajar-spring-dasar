@@ -20,7 +20,7 @@ public class CyclicConfiguration {
     }
 
     @Bean
-    public CyclicC cyclicA(CyclicA cyclicA){
+    public CyclicC cyclicC(CyclicA cyclicA){
         return new CyclicC(cyclicA);
     }
 }
