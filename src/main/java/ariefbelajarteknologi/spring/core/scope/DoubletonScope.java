@@ -10,7 +10,7 @@ public class DoubletonScope implements Scope {
 
     private List<Object> objects = new ArrayList<>(2);
 
-    private Long counter = 0L;
+    private Long counter = -1L;
 
     @Override
     public Object get(String name, ObjectFactory<?> objectFactory) {
