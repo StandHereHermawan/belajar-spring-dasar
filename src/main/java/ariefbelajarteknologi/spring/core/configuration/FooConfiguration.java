@@ -1,4 +1,4 @@
-package ariefbelajarteknologi.spring.core;
+package ariefbelajarteknologi.spring.core.configuration;
 
 import ariefbelajarteknologi.spring.core.data.Foo;
 import org.springframework.context.annotation.Bean;
