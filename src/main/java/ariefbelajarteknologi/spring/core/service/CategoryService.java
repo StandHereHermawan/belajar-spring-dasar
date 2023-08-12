@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CategoryService {
 
+    @Getter
     private CategoryRepository categoryRepository;
 
     @Autowired
