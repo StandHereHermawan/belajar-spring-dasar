@@ -1,5 +1,6 @@
 package ariefbelajarteknologi.spring.core;
 
+import ariefbelajarteknologi.spring.core.data.MultiFoo;
 import ariefbelajarteknologi.spring.core.repository.CategoryRepository;
 import ariefbelajarteknologi.spring.core.repository.CustomerRepository;
 import ariefbelajarteknologi.spring.core.repository.ProductRepository;
@@ -58,5 +59,13 @@ public class ComponentTest {
 
         Assertions.assertSame(normalCustomerRepository,customerService.getNormalCustomerRepository());
         Assertions.assertSame(premiumCustomerRepository,customerService.getPremiumCustomerRepository());
+    }
+
+    @Test
+    void testObjectProvider() {
+
+        MultiFoo multiFoo = applicationContext.getBean(MultiFoo.class);
+        Assertions.assertEquals(3,multiFoo.getFoos().size());
+
     }
 }
