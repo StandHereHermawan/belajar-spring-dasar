@@ -2,6 +2,7 @@ package ariefbelajarteknologi.spring.core;
 
 import ariefbelajarteknologi.spring.core.listener.LoginAgainSuccessListener;
 import ariefbelajarteknologi.spring.core.listener.LoginSuccessListener;
+import ariefbelajarteknologi.spring.core.listener.UserListener;
 import ariefbelajarteknologi.spring.core.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,8 @@ public class EventListenerTest {
     @Import({
             UserService.class,
             LoginSuccessListener.class,
-            LoginAgainSuccessListener.class
+            LoginAgainSuccessListener.class,
+            UserListener.class
     })
     public static class TestConfiguration{
 
