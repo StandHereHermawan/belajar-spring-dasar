@@ -7,7 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserService implements ApplicationEventPublisherAware {
 
+<<<<<<< HEAD
     private ApplicationEventPublisher applicationEventPublisherAware;
+=======
+    private ApplicationEventPublisherAware applicationEventPublisherAware;
+>>>>>>> origin/master
 
     @Override
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
