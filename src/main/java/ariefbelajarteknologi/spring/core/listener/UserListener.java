@@ -14,4 +14,14 @@ public class UserListener {
         log.info("Success login again for {}", event.getUser());
     }
 
+    @EventListener(classes = LoginSuccessEvent.class)
+    public void onLoginSuccessEvent2(LoginSuccessEvent event) {
+        log.info("Success login again for {}", event.getUser());
+    }
+
+    @EventListener(classes = LoginSuccessEvent.class)
+    public void onLoginSuccessEvent3(LoginSuccessEvent event) {
+        log.info("Success login again for {}", event.getUser());
+    }
+
 }
