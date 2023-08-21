@@ -17,7 +17,6 @@ public class FooApplication {
     public Foo foo() {
         return new Foo();
     }
-
     /*
 
     public static void main(String[] args) {
@@ -26,8 +25,6 @@ public class FooApplication {
         Foo foo = applicationContext.getBean(Foo.class);
         System.out.println(foo);
     }
-
-    */
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(FooApplication.class);
@@ -39,5 +36,5 @@ public class FooApplication {
         Foo foo = applicationContext.getBean(Foo.class);
         System.out.println(foo);
     }
-
+    */
 }
