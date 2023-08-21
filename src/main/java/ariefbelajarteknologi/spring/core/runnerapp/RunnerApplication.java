@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RunnerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RunnerApplication.class);
+        SpringApplication.run(RunnerApplication.class, args);
     }
 }
